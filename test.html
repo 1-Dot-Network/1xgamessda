@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <style type="text/css">
+            html {
+                overflow: auto;
+            }
+              
+            html,
+            body,
+            div,
+            iframe {
+                margin: 0px;
+                padding: 0px;
+                height: 100%;
+                border: none;
+            }
+              
+            iframe {
+                display: block;
+                width: 100%;
+                border: none;
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+        </style>
+    </head>
+      
+    <body>
+        <iframe src="https://geforce4.v685176.repl.co/?url=play.geforcenow.com"
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0" 
+                width="100%" 
+                height="size" 
+                scrolling="auto">
+      </iframe>
+      <div id="navbar" style="
+position: absolute;
+top: 0%;
+left: 0%;
+width: 100%;
+margin-bottom: 10%;
+height: 7%;
+background-color: #000000 ;
+transition-duration: 100ms;
+">
+        <div id="navbarTitle" style="
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    position: absolute;
+    font-size: 2vmax;
+    transition-duration: 100ms;
+    cursor: pointer;
+    left: 0.5%;
+    top: 10%;
+    " onclick="window.location = '../index.html'">1xGames</div>
+        <style>
+            #navbarTitle:hover {
+                transform: scale(1.1);
+                text-shadow: -5px 5px 10px;
+            }
+
+            #navbarTitle:active {
+                transform: scale(0.9);
+                text-shadow: 0px 0px 10px;
+            }
+        </style>
+
+        <div id="arrowToggle" style="transform:scale(0.15); rotate: 180deg;"><img src="../../images/arrow.png"></div>
+        <style>
+            #arrowToggle {
+                background-color: #0e0e0e00;
+                width: fit-content;
+                border-radius: 20%;
+                position: absolute;
+                left: 90%;
+                top: 100%;
+                cursor: pointer;
+                transition-duration: 300ms;
+            }
+
+            #arrowToggle:hover {
+                background-color: #292929d1;
+            }
+
+            #arrowToggle:active {
+                background-color: #0e0e0e9b;
+                set arrow = active
+            }
+
+        </style>
+        <script>
+            if arrow = Active {
+                set size = 100%
+            }
+        </script>
+        <script>
+            var navBar = document.getElementById('navbar')
+            var arrowToggle = document.getElementById('arrowToggle')
+            arrowToggle.addEventListener('click', () => {
+                if (arrowToggle.style.rotate === '0deg') {
+                    arrowToggle.style.rotate = '180deg'
+                    arrowToggle.style.top = '100%'
+                    navBar.style.top = '0%'
+                } else if (arrowToggle.style.rotate === '180deg') {
+                    arrowToggle.style.rotate = '0deg'
+                    arrowToggle.style.top = '100%'
+                    navBar.style.top = '-7%'
+                }
+            })
+        </script>
+    </div>
+</html>
